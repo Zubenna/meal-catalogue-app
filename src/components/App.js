@@ -1,10 +1,26 @@
-import '../styles/App.css';
-import Routes from '../Routes';
+import '../App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './Header';
+import MealDetail from './MealDetail';
+import MealCatalogue from './MealCatalogue';
 
-const App = () => (
-  <div className="App">
-    <Routes />
-  </div>
-);
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={MealCatalogue} />
+          <Route path="/meal/:mealId" exact component={MealDetail} />
+          <Route>Page not found 404 error</Route>
+        </Switch>
+        {/* <MealComponent />
+        <MealDetail />
+        <MealCatalogue /> */}
+      </Router>
+
+    </div>
+  );
+}
 
 export default App;
