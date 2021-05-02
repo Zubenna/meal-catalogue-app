@@ -1,0 +1,12 @@
+.displayMeal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 4rem;
+  width: 85vw;
+  margin: 0 auto;
+  border: 2px solid gray;
+  z-index: -10;
+}

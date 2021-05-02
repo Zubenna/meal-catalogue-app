@@ -1,0 +1,27 @@
+.mealBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.perMeal {
+  flex: 1 1 2rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.imageBox {
+  width: 22rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.mealTitle {
+  height: 3rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}

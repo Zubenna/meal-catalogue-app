@@ -1,9 +1,11 @@
 import React from 'react';
+import Style from '../styles/HeaderStyle.module.css';
 
 const Header = () => (
-  <div>
-    <h1>Meal Catalogue</h1>
-    <h1>Hotel Presidential Port Harcourt</h1>
+  <div className={Style.headerBox}>
+    <div className={Style.setTitle}>
+      <h2>Dezyno Restaurant Recipe</h2>
+    </div>
   </div>
 );
 
