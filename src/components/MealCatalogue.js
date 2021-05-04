@@ -9,7 +9,7 @@ const MealCatalogue = () => {
   const meals = useSelector((state) => state.allMeals.meals);
   const dispatch = useDispatch();
   const fetchMeals = () => {
-    axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood', {
+    axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef', {
       method: 'GET',
       mode: 'cors',
     })

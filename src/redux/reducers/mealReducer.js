@@ -4,7 +4,7 @@ const initialState = {
   meals: [],
 };
 
-const mealReducer = (state = initialState, { type, payload }) => {
+export const mealReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.DISPLAY_MEALS:
       return { ...state, meals: payload };
@@ -13,4 +13,11 @@ const mealReducer = (state = initialState, { type, payload }) => {
   }
 };
 
-export default mealReducer;
+export const selectedMealReducer = (state = {}, { type, payload }) => {
+  switch (type) {
+    case ActionTypes.SELECTED_MEAL:
+      return { ...state, ...payload };
+    default:
+      return state;
+  }
+};
