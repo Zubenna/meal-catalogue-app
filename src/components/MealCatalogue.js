@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { displayMeals } from '../redux/actions/mealAction';
 import MealComponent from './MealComponent';
 import Style from '../styles/MealCatalogueStyle.module.css';
 
 const MealCatalogue = () => {
-  // const meals = useSelector((state) => state); useSelector
+  const meals = useSelector((state) => state.allMeals.meals);
   const dispatch = useDispatch();
   const fetchMeals = () => {
-    axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef', {
+    axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood', {
       method: 'GET',
       mode: 'cors',
     })
@@ -25,9 +25,11 @@ const MealCatalogue = () => {
   }, []);
 
   return (
-    <div className={Style.displayMeal}>
-      <MealComponent />
-    </div>
+    <table className={Style.displayMeal}>
+      {meals.map((meal) => (
+        <MealComponent key={meal.idMeal} meal={meal} />
+      ))}
+    </table>
   );
 };
 

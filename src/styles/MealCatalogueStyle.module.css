@@ -1,12 +1,14 @@
 .displayMeal {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  top: 4rem;
-  width: 85vw;
-  margin: 0 auto;
+  padding-top: 5rem;
+  background-color: purple;
+  /* position: absolute; */
+  /* top: 4rem; */
+  /* width: 95vw; */
+  /* margin: 0 auto; */
   border: 2px solid gray;
   z-index: -10;
 }

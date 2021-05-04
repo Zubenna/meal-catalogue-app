@@ -1,28 +1,41 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import Button from 'react-bootstrap/Button';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Style from '../styles/MealComponentStyle.module.css';
 
-const MealComponent = () => {
-  const meals = useSelector((state) => state.allMeals.meals);
-  const renderMeals = meals.map((meal) => {
-    const { idMeal, strMeal, strMealThumb } = meal;
-    return (
-      <div className={Style.perMeal} key={idMeal}>
-        <div className={Style.mealBox}>
-          <div className={Style.imageBox}>
-            <img src={strMealThumb} alt={strMeal} className={Style.img} />
+const MealComponent = (props) => {
+  const { meal } = props;
+  const uniqueKey = meal.idMeal;
+  return (
+    <tbody>
+      <tr>
+        <td>
+          <div className={Style.mealDetails} key={uniqueKey}>
+            <div className={Style.imgContainer}>
+              <img src={meal.strMealThumb} alt={meal.strMeal} className={Style.img} />
+            </div>
+            <div className={Style.mealName}>
+              <h3>{meal.strMeal}</h3>
+            </div>
+
+            <button type="button">
+              <Link className={Style.link} to={`/meal/${uniqueKey}`}>
+                <h4 className={Style.detail}>See Details</h4>
+              </Link>
+            </button>
           </div>
-          <div className={Style.mealTitle}>
-            <h3>{strMeal}</h3>
-          </div>
-          <Button ClassName="p-2" variant="primary">See Details</Button>
-          {' '}
-        </div>
-      </div>
-    );
-  });
-  return <>{renderMeals}</>;
+        </td>
+      </tr>
+    </tbody>
+  );
+};
+
+MealComponent.propTypes = {
+  meal: PropTypes.shape({
+    strMealThumb: PropTypes.string,
+    strMeal: PropTypes.string,
+    idMeal: PropTypes.string,
+  }).isRequired,
 };
 
 export default MealComponent;
