@@ -1,0 +1,12 @@
+.filterBox {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 4rem;
+  z-index: 1;
+  color: #fff;
+  background-color: blue;
+}
