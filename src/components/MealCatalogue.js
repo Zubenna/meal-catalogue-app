@@ -3,12 +3,13 @@ import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { displayMeals } from '../redux/actions/mealAction';
 import MealComponent from './MealComponent';
-import Filter from './Filter';
 import Style from '../styles/MealCatalogueStyle.module.css';
+import AreaFilter from './AreaFilter';
 
 const MealCatalogue = () => {
   const meals = useSelector((state) => state.allMeals.meals);
   const dispatch = useDispatch();
+
   const fetchMeals = () => {
     axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=c', {
       method: 'GET',
@@ -27,7 +28,7 @@ const MealCatalogue = () => {
 
   return (
     <div>
-      <Filter count={meals.length} />
+      <AreaFilter />
       <table className={Style.displayMeal}>
         {meals.map((meal) => (
           <MealComponent key={meal.idMeal} meal={meal} />
