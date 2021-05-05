@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import MealDetail from './MealDetail';
 import MealCatalogue from './MealCatalogue';
+import ErrorPage from './ErrorPage';
+import About from './About';
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={MealCatalogue} />
           <Route path="/meal/:mealId" exact component={MealDetail} />
-          <Route>Page not found 404 error</Route>
+          <Route path="/about" exact component={About} />
+          <Route path="/error" exact component={ErrorPage} />
         </Switch>
       </Router>
     </div>

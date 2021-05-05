@@ -3,7 +3,6 @@
   margin: 0 auto;
   border: 2px palevioletred solid;
   height: auto;
-  /* padding-top: 5rem; */
 }
 
 .detailImgBox {
@@ -35,23 +34,29 @@ img {
   padding-left: 1rem;
   font-size: 1.3rem;
   margin: 0;
-  /* color: purple; */
+  color: #fff;
 }
 
 .ingredientBox {
-  /* margin: 0; */
   padding: 0;
   font-size: 1.1rem;
   margin-bottom: 0.6rem;
+  color: #fff;
 }
 
 .h3 {
   margin: 0;
   padding-bottom: 0.1rem;
+  color: #fff;
 }
 
 .instruction {
   font-size: 1.2rem;
   padding: 0.5rem;
   text-align: left;
+  color: #fff;
+}
+
+.whiteText {
+  color: #fff;
 }

@@ -39,11 +39,11 @@ const MealDetail = () => {
         </div>
         <div>
           <div className={Style.headingBox}>
-            <h3>Name:</h3>
+            <h3 className={Style.whiteText}>Name:</h3>
             <p className={Style.text}>{strMeal}</p>
           </div>
           <div className={Style.headingBox}>
-            <h3>Origin Area:</h3>
+            <h3 className={Style.whiteText}>Origin Area:</h3>
             <p className={Style.text}>{strArea}</p>
           </div>
         </div>

@@ -36,11 +36,11 @@ const AreaFilter = (props) => {
   return (
     <div className={Style.filterBox}>
       <div>
-        Total meals:
+        <span className={Style.menuTitle}>Total meals retrieved originally:</span>
         {meals.length}
       </div>
       <div>
-        Filter By Origin Area:
+        <span className={Style.menuTitle}>Filter By Origin Area:</span>
         <select name="area" id="select" onChange={handleClick}>
           {AREAS.map((area) => <option value={area} key={area}>{area}</option>)}
         </select>

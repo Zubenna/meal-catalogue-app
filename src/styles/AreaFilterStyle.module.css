@@ -5,8 +5,14 @@
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  top: 4rem;
+  top: 3.8rem;
   z-index: 1;
   color: #fff;
   background-color: blue;
 }
+
+.menuTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+} 
