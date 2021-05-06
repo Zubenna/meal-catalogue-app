@@ -13,7 +13,6 @@ const AreaFilter = (props) => {
     'Indian',
     'Italian',
     'American',
-    'Mexican',
     'Japanese',
     'Moroccan',
     'Canadian',

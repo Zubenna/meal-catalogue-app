@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   height: 4rem;
-  background: rgb(53, 52, 52);
+  background: #2c0707;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,4 +34,26 @@
   font-size: 1.5rem;
   color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media (max-width: 576px) {
+  .headerBox {
+    padding: 0.2rem;
+    justify-content: space-evenly;
+  }
+
+  .pageName {
+    font-size: 1rem;
+  }
+
+  .linkItem,
+  .linkHome {
+    font-size: 0.8rem;
+  }
+
+  .linkHome {
+    padding-right: 0.6rem;
+  }
+
 }
