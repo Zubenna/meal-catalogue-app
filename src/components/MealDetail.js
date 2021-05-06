@@ -44,7 +44,7 @@ const MealDetail = () => {
           </div>
           <div className={Style.headingBox}>
             <h3 className={Style.whiteText}>Origin Area:</h3>
-            <p className={Style.text}>{strArea}</p>
+            <p className={Style.text} >{strArea}</p>
           </div>
         </div>
       </div>

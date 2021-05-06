@@ -40,7 +40,7 @@ const AreaFilter = (props) => {
       </div>
       <div>
         <span className={Style.menuTitle}>Filter By Origin Area:</span>
-        <select name="area" id="select" onChange={handleClick}>
+        <select name="area" id="select" data-testid="areas" onChange={handleClick}>
           {AREAS.map((area) => <option value={area} key={area}>{area}</option>)}
         </select>
       </div>

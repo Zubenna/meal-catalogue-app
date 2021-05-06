@@ -12,10 +12,10 @@ const MealComponent = (props) => {
         <td>
           <div className={Style.mealDetails} key={uniqueKey}>
             <div className={Style.imgContainer}>
-              <img src={meal.strMealThumb} alt={meal.strMeal} className={Style.img} />
+              <img src={meal.strMealThumb} data-testid="image" alt={meal.strMeal} className={Style.img} />
             </div>
             <div className={Style.mealName}>
-              <h3>{meal.strMeal}</h3>
+              <h3 data-testid="name">{meal.strMeal}</h3>
             </div>
 
             <button type="button">
