@@ -89,7 +89,7 @@ Feel free to check the [issues page](https://github.com/Zubenna/meal-catalogue-a
 Kindly star ⭐️ this project, if you like it!
  Denys Chagaida on Behance
 ## :clap: Acknowledgements
-- [Denys Chagaida on Behance] - For UI Design inspiration.
+- Denys Chagaida on Behance - For UI Design inspiration.
 - [Microverse](https://www.microverse.org/)
 
 ## 📝 License
