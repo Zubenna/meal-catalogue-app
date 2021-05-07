@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { displayMeals, filterChange } from '../redux/actions/mealAction';
-import MealComponent from './MealComponent';
+import MealComponent from '../components/MealComponent';
 import Style from '../styles/MealCatalogueStyle.module.css';
 import AreaFilter from './AreaFilter';
 

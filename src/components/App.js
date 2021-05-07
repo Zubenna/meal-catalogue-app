@@ -2,7 +2,7 @@ import '../App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import MealDetail from './MealDetail';
-import MealCatalogue from './MealCatalogue';
+import MealCatalogue from '../containers/MealCatalogue';
 import ErrorPage from './ErrorPage';
 import About from './About';
 
