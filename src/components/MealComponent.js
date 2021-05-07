@@ -7,26 +7,21 @@ const MealComponent = (props) => {
   const { meal } = props;
   const uniqueKey = meal.idMeal;
   return (
-    <tbody>
-      <tr>
-        <td>
-          <div className={Style.mealDetails} key={uniqueKey}>
-            <div className={Style.imgContainer}>
-              <img src={meal.strMealThumb} data-testid="image" alt={meal.strMeal} className={Style.img} />
-            </div>
-            <div className={Style.mealName}>
-              <h3 data-testid="name">{meal.strMeal}</h3>
-            </div>
-
-            <button type="button">
-              <Link className={Style.link} to={`/meal/${uniqueKey}`}>
-                <h4 className={Style.detail}>See Details</h4>
-              </Link>
-            </button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
+    <div>
+      <div className={Style.mealDetails} key={uniqueKey}>
+        <div className={Style.imgContainer}>
+          <img src={meal.strMealThumb} data-testid="image" alt={meal.strMeal} className={Style.img} />
+        </div>
+        <div className={Style.mealName}>
+          <h3 data-testid="name">{meal.strMeal}</h3>
+        </div>
+        <button type="button">
+          <Link className={Style.link} to={`/meal/${uniqueKey}`}>
+            <h4 className={Style.detail}>See Details</h4>
+          </Link>
+        </button>
+      </div>
+    </div>
   );
 };
 

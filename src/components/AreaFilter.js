@@ -1,10 +1,8 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import Style from '../styles/AreaFilterStyle.module.css';
 
 const AreaFilter = (props) => {
-  const meals = useSelector((state) => state.allMeals.meals);
   const AREAS = [
     'All',
     'French',
@@ -25,7 +23,7 @@ const AreaFilter = (props) => {
     'Unknown',
   ];
 
-  const { handleFilter } = props;
+  const { handleFilter, meals } = props;
 
   const handleClick = (event) => {
     const { value } = event.target;
@@ -49,6 +47,7 @@ const AreaFilter = (props) => {
 };
 
 AreaFilter.propTypes = {
+  meals: PropTypes.shape([]).isRequired,
   handleFilter: PropTypes.func.isRequired,
 };
 

@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { displayMeals, filterChange } from '../redux/actions/mealAction';
 import MealComponent from '../components/MealComponent';
 import Style from '../styles/MealCatalogueStyle.module.css';
-import AreaFilter from './AreaFilter';
+import AreaFilter from '../components/AreaFilter';
 
 const MealCatalogue = () => {
   const meals = useSelector((state) => state.allMeals.meals);
@@ -37,12 +37,12 @@ const MealCatalogue = () => {
 
   return (
     <div>
-      <AreaFilter handleFilter={handleFilter} />
-      <table className={Style.displayMeal}>
+      <AreaFilter handleFilter={handleFilter} meals={meals} />
+      <div className={Style.displayMeal}>
         {filteredMeals().map((meal) => (
           <MealComponent key={meal.idMeal} meal={meal} />
         ))}
-      </table>
+      </div>
     </div>
   );
 };

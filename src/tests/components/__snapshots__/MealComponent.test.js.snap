@@ -1,44 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<MealComponent /> it renders correctly 1`] = `
-<tbody>
-  <tr>
-    <td>
-      <div
-        className="mealDetails"
+<div>
+  <div
+    className="mealDetails"
+  >
+    <div
+      className="imgContainer"
+    >
+      <img
+        className="img"
+        data-testid="image"
+      />
+    </div>
+    <div
+      className="mealName"
+    >
+      <h3
+        data-testid="name"
+      />
+    </div>
+    <button
+      type="button"
+    >
+      <a
+        className="link"
+        href="/meal/undefined"
+        onClick={[Function]}
       >
-        <div
-          className="imgContainer"
+        <h4
+          className="detail"
         >
-          <img
-            className="img"
-            data-testid="image"
-          />
-        </div>
-        <div
-          className="mealName"
-        >
-          <h3
-            data-testid="name"
-          />
-        </div>
-        <button
-          type="button"
-        >
-          <a
-            className="link"
-            href="/meal/undefined"
-            onClick={[Function]}
-          >
-            <h4
-              className="detail"
-            >
-              See Details
-            </h4>
-          </a>
-        </button>
-      </div>
-    </td>
-  </tr>
-</tbody>
+          See Details
+        </h4>
+      </a>
+    </button>
+  </div>
+</div>
 `;
