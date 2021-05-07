@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 8rem;
   border: 2px solid gray;
   z-index: -10;
 }
