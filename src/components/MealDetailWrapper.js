@@ -10,7 +10,7 @@ const MealDetailWrapper = () => {
     <Provider store={store}>
       <MealDetail />
     </Provider>
-  )
+  );
 };
 
 export default MealDetailWrapper;

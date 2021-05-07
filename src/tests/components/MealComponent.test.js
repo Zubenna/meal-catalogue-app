@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import MealComponent from '../../components/MealComponent';
 
 describe('<MealComponent />', () => {
-  const  meal = {
+  const meal = {
     meal: [{ name: 'Christmas Pudding Flapjack', area: 'Britain' }, { name: 'Chicken Handi', area: 'Indian' }],
   };
 
@@ -33,7 +33,7 @@ describe('<MealComponent />', () => {
   it('renders a name', () => {
     const { queryAllByTestId } = render(
       <Router>
-       <MealComponent meal={meal} />
+        <MealComponent meal={meal} />
       </Router>,
     );
     const name = queryAllByTestId('name');
@@ -43,7 +43,7 @@ describe('<MealComponent />', () => {
   it('renders an image corecctly', () => {
     const { queryAllByTestId } = render(
       <Router>
-       <MealComponent meal={meal} />
+        <MealComponent meal={meal} />
       </Router>,
     );
     const image = queryAllByTestId('img');
