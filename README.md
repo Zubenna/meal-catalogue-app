@@ -56,7 +56,7 @@ npm start
 Launch live version.
 - [Launch App](https://zubenna-meal-catalogue.netlify.app/)
 
-- [Video Link](https://gist.github.com/Zubenna/c2dbb10b3d3ecd14e7e820b69bf87eff.js)
+- [Video Link](https://gist.github.com/Zubenna/c2dbb10b3d3ecd14e7e820b69bf87eff)
 
 
 ## Built With (Packages and tools)
