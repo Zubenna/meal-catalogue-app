@@ -19,8 +19,7 @@ const MealCatalogue = () => {
       .then((response) => {
         dispatch(displayMeals(response.data.meals));
       })
-      .catch((err) => {
-        console.log('Err', err);
+      .catch(() => {
       });
   };
   useEffect(() => {

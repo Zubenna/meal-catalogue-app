@@ -21,8 +21,7 @@ const MealDetail = () => {
       .then((response) => {
         dispatch(selectedMeal(response.data.meals[0]));
       })
-      .catch((err) => {
-        console.log('Err', err);
+      .catch(() => {
       });
   };
   useEffect(() => {
