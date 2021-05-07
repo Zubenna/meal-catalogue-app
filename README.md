@@ -54,7 +54,7 @@ npm start
 
 ## Live Version
 Launch live version.
-- [Launch App]()
+- [Launch App](https://zubenna-meal-catalogue.netlify.app/)
 
 ## Built With (Packages and tools)
 - React
