@@ -4,11 +4,10 @@
   height: 3rem;
   align-items: center;
   justify-content: space-evenly;
-  position: fixed;
-  top: 3.8rem;
-  z-index: 1;
+  position: relative;
+  top: 4.8rem;
   color: #fff;
-  background-color: blue;
+  z-index: -10;
 }
 
 .menuTitle {

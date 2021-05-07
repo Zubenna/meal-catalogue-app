@@ -9,16 +9,16 @@ This is a single-page application (SPA) built with react and redux. The main fun
 ## Preview
 
 ## Home Page
-![image](images/catalogue-Home-page.png)
+![image](images/cat-desktop-home.png)
 
 ## About Page
-![image](images/catalogue-about-page.png)
+![image](images/cat-desktop-about.png)
 
 ## Detail Page
-![image](images/catalogue-detail-page.png)
+![image](images/cat-desktop-detail.png)
 
 ## Mobile View
-![image](images/catalogue-mobile-view.png)
+![image](images/cat-mobile.png)
 
 ## Project SetUp
 Get a local copy of the file. Clone with HTTPS following the steps below.

@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import Style from '../styles/HeaderStyle.module.css';
 
 const Header = () => (
-  <div className={Style.headerBox}>
+  <div className={`${Style.headerBox} ${Style.setFlex}`}>
     <div>
-      <Link className={Style.pageName} to="/">Dezyno Restaurant Recipe</Link>
+      <Link className={`${Style.pageName} ${Style.setWhite}`} to="/">Dezyno Restaurant Recipe</Link>
     </div>
-    <div className={Style.setMenu}>
-      <Link className={Style.linkHome} to="/">Home</Link>
-      <Link className={Style.linkItem} to="/about">About Us</Link>
+    <div className={`${Style.setMenu} ${Style.setFlex}`}>
+      <Link className={`${Style.linkItem} ${Style.linkHome} ${Style.setWhite}`} to="/">Home</Link>
+      <Link className={`${Style.linkItem} ${Style.setWhite}`} to="/about">About Us</Link>
     </div>
   </div>
 );
