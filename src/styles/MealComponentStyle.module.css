@@ -1,0 +1,32 @@
+.mealDetails {
+  max-width: 26rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.imgContainer {
+  min-height: 15rem;
+  max-width: 25rem;
+}
+
+.img {
+  width: 100%;
+  min-height: 100%;
+  border-radius: 10px;
+}
+
+.link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mealName {
+  color: #fff;
+  padding: 0.7rem;
+}
+
+.detail {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+}
