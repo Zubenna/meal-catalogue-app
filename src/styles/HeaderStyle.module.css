@@ -1,0 +1,54 @@
+.headerBox {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: #2c0707;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+
+.setFlex {
+  display: flex;
+  align-items: center;
+}
+
+.setMenu {
+  justify-content: center;
+}
+
+.linkItem {
+  font-size: 1.2rem;
+}
+
+.setWhite {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff;
+}
+
+.linkHome {
+  padding-right: 1rem;
+}
+
+.pageName {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .headerBox {
+    padding: 0.2rem;
+    justify-content: space-evenly;
+  }
+
+  .pageName {
+    font-size: 1rem;
+  }
+
+  .linkItem,
+  .linkHome {
+    font-size: 0.8rem;
+  }
+
+  .linkHome {
+    padding-right: 0.6rem;
+  }
+}

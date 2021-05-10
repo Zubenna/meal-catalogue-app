@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Meal Catalogue App
+This is a single-page application (SPA) built with react and redux. The main function of this application is to display a catalog of different meals that can be served in any restaurant. It allows customers to see details of each meal and to make a decision whether to buy or not. The application pulls the information about the meals from The mealDB API. The list of meals on display can be filtered using the meal origin area (country of origin of the meal). Detailed information about each meal can be seen by clicking on the See Details button below each meal. This will display further information about each meal including name, origin area, basic ingredients, and instruction on how to prepare the meal. You can also view information about this restaurant by clicking on the About Us tab on the navigation bar. You can go back to the home page by clicking the Home tab or the name of the application. This application is fully responsive.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Main Features
+- User Can list meals from different countries
+- User can filter the list based on meals origin area (country of origin).
+- User can see details of each meal.
 
-## Available Scripts
+## Preview
 
-In the project directory, you can run:
+## Home Page
+![image](images/cat-desktop-home.png)
 
-### `npm start`
+## About Page
+![image](images/cat-desktop-about.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Detail Page
+![image](images/cat-desktop-detail.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Mobile View
+![image](images/cat-mobile.png)
 
-### `npm test`
+## Project SetUp
+Get a local copy of the file. Clone with HTTPS following the steps below.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### For Windows
+- In your search box, type cmd, click on cmd to open the command prompt.
 
-### `npm run build`
+### For Linux, Mac OS
+- In your search box, type terminal, click on the terminal to launch it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Copy and paste the command below in your terminal and press enter from your keyboard.
+```
+git clone https://github.com/Zubenna/meal-catalogue-app.git
+```
+## Access Project Folder 
+- Depending on where the project files are downloaded to, either Hard Disk(HDD), Desktop or Documents directory in your computer after completing the step above.
+- Double click on the folder meal-catalogue-app to open it.
+- Inside the folder, right-click and click on terminal or cmd depending on your Operating System to open it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Set Up Project Locally in Your Computer
+- In the cmd or terminal, type the command below;
+```
+npm install
+```
+- Wait for some time to install all the app packages and dependencies.
+- Once the installation is completed.
+- Type the command below in your cmd or terminal to start the project locally. Wait for some time.
+```
+npm start
+```
+- Once the server is fully started, you will see the project opening a different tab on your browser at port http://localhost:3000/. The page now displays the Dezyno Restaurant Recipe app. You can navigate through the Dezyno Restaurant Recipe now.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Live Version
+Launch live version.
+- [Launch App](https://zubenna-meal-catalogue.netlify.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Video Link](https://gist.github.com/Zubenna/c2dbb10b3d3ecd14e7e820b69bf87eff)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Built With (Packages and tools)
+- React
+- JavaScript
+- React-DOM
+- React-Create-App
+- Redux
+- npm
+- [themealDB API](https://www.themealdb.com/api.php)
+- Axios
+- PropTypes
+- ES6
+- Jest
+- Enzyme
+- CSS modules
+- React Testing Library
+- Eslint
+- Stylelint
+- VScode
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Author
+👤 **Nnamdi Emelu**
+- Github: [zubenna](https://github.com/zubenna)
+- Twitter: [@zubenna](https://twitter.com/zubenna)
+- Linkedin: [nnamdi-emelu](https://www.linkedin.com/in/nnamdi-emelu/)
 
-## Learn More
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Zubenna/meal-catalogue-app/issues/new)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👍 Show Your Support
+Kindly star ⭐️ this project, if you like it!
+ Denys Chagaida on Behance
+## :clap: Acknowledgements
+- Denys Chagaida on Behance - For UI Design inspiration.
+- [Microverse](https://www.microverse.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+This project is [MIT](LICENSE) licensed.

@@ -1,0 +1,23 @@
+.setAbout {
+  padding-top: 6rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.headerColor {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.aboutText {
+  width: 60%;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .aboutText {
+    width: 100%;
+  }
+}

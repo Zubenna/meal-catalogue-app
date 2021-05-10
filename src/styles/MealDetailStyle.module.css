@@ -1,0 +1,60 @@
+.mealContainer {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px palevioletred solid;
+  height: auto;
+}
+
+.detailImgBox {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.detailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headingBox {
+  display: flex;
+  min-width: 30%;
+}
+
+.text {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  margin: 0;
+  color: #fff;
+}
+
+.ingredientBox {
+  padding: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: #fff;
+}
+
+.h3 {
+  margin: 0;
+  padding-bottom: 0.1rem;
+  color: #fff;
+}
+
+.instruction {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  text-align: left;
+  color: #fff;
+}
+
+.whiteText {
+  color: #fff;
+}
